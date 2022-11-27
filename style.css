@@ -480,12 +480,77 @@ header{
   font-family: 'rubikregular';
 }
 
+/********** PAGE DE SHOP *********/
+
+#hautdepageshop{
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#texthautshop{
+  background-color: #EFF1F0;
+  border-radius: 10px;
+  width: 100%;
+  margin-right: 16px;
+  padding: 90px 50px 50px;
+  color: #354E57;
+  max-height: 160px;
+  
+  
+}
+
+#texthautshop h4{
+  font-family: 'rubikbold';
+  font-size: 2rem;
+}
+
+#texthautshop p{
+  font-family: 'rubikregular';
+  
+}
+#photohautshop img{
+  height: 300px;
+}
+
+#trierpar{
+  margin-top: 60px;
+  margin-bottom: 16px;
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  left: 500px;
+}
+
+
+
+.trait{
+  width: 1000px;
+  height: 1px;
+  background-color: #1f2a2e   ;
+  position: relative;
+  left: 200px;
+}
+
+
 /******** MEDIA QUERRIES **********/
-@media screen and (max-width:1183px){
+@media screen and (max-width:1200px){
 
   #footer .coordonnees{
       width: 100%;
   }
+
+  #hautdepageshop{
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  #texthautshop{
+    margin-left: 16px;
+    margin-right: 16px;
+    }
+
 
   .nivoSlider{
     margin-left: 16px;
@@ -537,6 +602,10 @@ header{
 @media screen and (max-width: 830px){
   
   #photopresentation{
+    display: none;
+  }
+
+  #photohautshop{
     display: none;
   }
 
@@ -744,3 +813,6 @@ header{
   }
 
 }
+
+
+
