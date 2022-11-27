@@ -553,6 +553,10 @@ header{
   .slider-wrapper{
     display: none;
   }
+
+  #mentionslegales{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 760px){
@@ -728,9 +732,13 @@ header{
   }
 
   .menu {
-     font-size: 2.5rem;
-     padding: 5px;
+     font-size: 1.5rem;
+     padding: 10px;
      list-style: none;
+  }
+
+  .ml{
+    font-size: 1.5rem;
   }
 
   .menu-ul {
