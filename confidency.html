@@ -32,57 +32,76 @@
 
       
 
-      <header class="container">
+<header class="container">
 
-        <!---------------------- BANDEAU FONCE ------------------>
-    
-      <div id="bandeaufonce">
-    
-        <!-- barre de recherche -->
-    
-        <div class="search-bar">
-          <input type="text" placeholder="&nbsp;&nbsp;&nbsp;marque, produit...">
-        </div>
-    
-        <!-- login/panier -->
-    
-        <a href="#"><p>LOGIN / PANIER</p></a>
-    
-      </div>
-    
-        <!----------------------- BANDEAU CLAIR ---------------------------->
-    
-      <nav class="navbar">
-    
-        <!-- logo -->
-    
-        <div>
-          <a href="index.html" class="logo">La<br>Tête<br>en<br>Vrac</a> 
-        </div>
-    
-        <!-- navigation top-page -->
-    
-        <div class="nav-links mobile-menu" >                    
-          <ul>
-            <li><a href="index.html" class="active">Accueil</a></li>
-            <li><a href="#">Denrées Alimentaires</a></li>
-            <li><a href="#">Hygiène Corporelle</a></li>
-            <li><a href="#">Boissons</a></li>
-            <li><a href="#">Produits Ménagers</a></li>
-          </ul>
-        </div>
-    
-        <!-- burger -->
-    
-        <div id="burger">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
-    
-      </nav>
-    
-    </header>
+  <!---------------------- BANDEAU FONCE ------------------>
+
+<div id="bandeaufonce">
+
+  <!-- barre de recherche -->
+
+  <div class="search-bar">
+    <input type="text" placeholder="&nbsp;&nbsp;&nbsp;marque, produit...">
+  </div>
+
+  <!-- login/panier -->
+
+  <a href="#"><p>LOGIN / PANIER</p></a>
+
+</div>
+
+  <!----------------------- BANDEAU CLAIR ---------------------------->
+
+<nav class="navbar">
+
+  <!-- logo -->
+
+  <div>
+    <a href="index.html" class="logo">La<br>Tête<br>en<br>Vrac</a> 
+  </div>
+
+  <!-- navigation top-page -->
+
+  <div class="nav-links mobile-menu" >                    
+    <ul>
+      <li><a href="#" class="active">Accueil</a></li>
+      <li><a href="#">Denrées Alimentaires</a></li>
+      <li><a href="#">Hygiène Corporelle</a></li>
+      <li><a href="#">Boissons</a></li>
+      <li><a href="#">Produits Ménagers</a></li>
+    </ul>
+  </div>
+
+  <section id="nav-smartphone" class="nav-smartphone">
+
+    <a class="bouton-fermer" id="bouton-fermer">&times;</a>
+
+   
+    <div class="nav-smartphone-liens">
+        <li class="menu"><a href="index.html">Accueil</a></li>
+        <li class="menu"><a href="#">Denrées Alimentaires</a></li>
+        <li class="menu"><a href="#">Hygiène Corporelle</a></li>
+        <li class="menu"><a href="#">Boissons</a></li>
+        <li class="menu"><a href="#">Produits Ménagers</a></li>
+        <li class="ml"><a href="remboursement.html">Politique de remboursement</a></li>
+        <li class="ml"><a href="confidency.html">Politique de confidentialité</a></li>
+        <li class="ml"><a href="contact.html">Contactez-nous</a></li>
+        <li class="ml"><a href="condut.html">Conditions d'utilisation</a></li>
+        <li class="ml"><a href="legal.html">Mentions légales</a></li>
+    </div>
+</section>
+
+  <!-- burger -->
+
+<div id="burger">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+</nav>
+
+</header>
 
 <main id="legalstuff" class="container">
 
@@ -276,5 +295,8 @@ Si vous souhaitez: accéder à, corriger, modifier ou supprimer toute informatio
         $('#menuprincipal ul').slideToggle(1500);
     });
     </script>  
+
+    <script src="scripts/nav.js"></script> 
+
 </body>
 </html>
