@@ -540,12 +540,6 @@ header{
 }
 
 @media screen and (max-width: 830px){
-  #footer{
-    flex-direction: ;
-  }
-}
-
-@media screen and (max-width: 830px){
   
   #photopresentation{
     display: none;
@@ -644,53 +638,107 @@ header{
 
 
 
-/* 
-@media screen and (max-width: 625px){
+
+
+
+
+
+
+
+
+
+/* menu smartphone */
+
+#burger {
+  display: none;
+}
+
+/* création trait menu burger */
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 45px;
+  height: 6px;
+  background-color: rgb(255, 255, 255);
+  margin: 9px 0;
+  border-radius: 5px;
+  transition: 0.4s;
+
+}
+
+.nav-smartphone {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #D7C4B4;
+  overflow-x: hidden;
+  transition: 0.6s;
+}
+
+/* le menu a l'intérieur du menu burger */
+
+.nav-smartphone-liens {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-smartphone a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #ffffff;
+  font-family: 'rubikregular';
+  display: block;
+  transition: 0.5s;
+}
+
+.nav-smartphone a:hover,
+.nav-smartphone a:focus {
+  color: rgba(208, 255, 0, 0.664);
+}
+
+.nav-smartphone .bouton-fermer {
+  position: absolute;
+  top: 40px;
+  right: 65px;
+  font-size: 60px;
+}
+
+/* responsive */
+@media all and (max-width: 768px) {
+
+  /* corps de la page */
   
-  .burger{
-    display: block;
-    z-index: 20000;
+  body {
+     width: 100%;
   }
 
-  .nav-links{
-    top: 0;
-    position: absolute;
-    background-color: rgba(222, 184, 135, 0.687);
-    height: 100vh;
-    width: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -100%;
+  /* NAV */
+
+  .nav {
+     display: flex;
+     justify-content: center;
+     padding: 5px;
   }
 
-  .nav-links{
-    position: absolute;
-    background-color: rgba(222, 184, 135, 0.687);
-    height: 100vh;
-    width: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -100%;
+  .menu {
+     font-size: 2.5rem;
+     padding: 5px;
+     list-style: none;
   }
 
-  .nav-links.mobile-menu{
-    margin-left: 0;
+  .menu-ul {
+     display: none;
   }
 
-  .nav-links ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #burger {
+     display: initial;
   }
 
-  .nav-links ul li{
-    padding: 15px 0px;
-    font-size: 1.25rem;
-  }
-
-  .navbar{
-    justify-content: space-around;
-  }
-} */
+}
