@@ -243,6 +243,7 @@ header{
 #senourrir{
   display: flex;
   align-items: center;
+  
 }
 
 #senourrir article{
@@ -251,7 +252,7 @@ header{
   margin-bottom: 16px;
   background-color: #EFF1F0;
   border-radius: 10px;
-  padding: 30px 24px;
+  padding: 30px 24px; 
 }
 
 #senourrir h1{
@@ -270,8 +271,6 @@ header{
 }
 
 #photopresentation img{
-  margin: 16px 0;
-  margin-left: 16px;
   border-radius:10px;
   opacity: 0.7;
 }
@@ -596,6 +595,10 @@ header{
       width: 100%;
   }
 
+  #senourrir article{
+    margin-right: 16px;
+  }
+
   #hautdepageshop{
     margin-left: 16px;
     margin-right: 16px;
@@ -609,6 +612,10 @@ header{
   .nivoSlider{
     margin-left: 16px;
     margin-right: 16px;
+  }
+
+  #photopresentation img{
+    margin-left: 16px;
   }
   
   .googlemap{
