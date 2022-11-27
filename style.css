@@ -169,7 +169,7 @@ header{
 	background:rgba(0, 0, 0, 0);
 	color:#ffffff;
   font-size: 0.9rem;
-  text-shadow: 1px 1px 2px #141d20;
+  text-shadow: 1px 1px 2px #1f2a2e;
 }
 
 .nivo-caption p{
@@ -382,6 +382,100 @@ header{
   border-bottom: 3px rgba(245, 229, 8, 0.884) solid ;
 }
 
+/******** PAGE MENTIONS LEGALES *******/
+
+#legalstuff{
+  background-color: #EFF1F0;
+  border-radius: 10px;
+  margin: 16px auto;
+}
+
+#legalimg{
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+#legalimg img{
+  width: 70%;
+  height: 50%;
+}
+
+#legaltext{
+  display: flex;
+  flex-direction: column;
+  font-family: 'rubikregular';
+  align-items: center;
+  color: #354E57;
+}
+
+#legaltext address, p, h4{
+  width: 65%;
+  justify-content: center;
+  font-style: normal;
+}
+
+#legaltext h4{
+  font-size: 20px;
+  font-family: 'rubikmedium';
+}
+
+#legaltext p{
+  padding: 20px 0;
+  
+}
+
+/************ PAGE CONTACTEZ-NOUS ********/
+
+#formulairecontact {
+  margin-top: 16px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 40px 60px;
+  
+}
+
+#formulairecontact input[type=text], select, textarea {
+  width: 100%;
+  display: flex;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border: none;
+  outline: none;
+  font-family: 'rubikregular';
+  
+}
+
+#formulairecontact input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
+}
+
+#formulairecontact input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#boutonsradio{
+  display: flex;
+}
+
+#boutonsradio label{
+  margin: 12px;
+  font-family: 'rubikregular';
+}
+
+/******** MEDIA QUERRIES **********/
 @media screen and (max-width:1183px){
 
   #footer .coordonnees{

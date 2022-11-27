@@ -30,37 +30,57 @@
 
 <!--------------------------------------- HEADER ------------------------------------->
 
-    <header id="bandeau" class="container">
-        
-    <nav>
-        <div id="bandeaufonce">
-            <p>LUNDI : 13h - 18h30 / MARDI AU VENDREDI : 09h - 18h30 / SAMEDI : 09h - 17h</p>
-            <div><input type="text" name="produits" placeholder="&nbsp;&nbsp;&nbsp;marque, produit..."></div>
-            <span><a href="#">LOGIN / PANIER</a></span>
-        </div>
+    
 
-       
+  <header class="container">
 
-        <div id="bandeauclair">
+    <!---------------------- BANDEAU FONCE ------------------>
 
-            <a href="index.html"><h1>La<br>Tête<br>En<br>Vrac</h1></a>
-            
-            <div id="burger">
-                <a href="#"><i class="fas fa-bars"></i></a>
-            </div>
+  <div id="bandeaufonce">
 
-            <ul>
-                <li><a href="#" class="choix">Denrées Alimentaires</a></li>
-                <li><a href="#">Hygiène Corporelle</a></li>
-                <li><a href="#">Boissons</a></li>
-                <li><a href="#">Produits Ménagers</a></li>
-                <li><a href="#">Plus</a></li>
-            </ul>
+    <!-- barre de recherche -->
 
-        </div>
-    </nav>
+    <div class="search-bar">
+      <input type="text" placeholder="&nbsp;&nbsp;&nbsp;marque, produit...">
+    </div>
 
-    </header>
+    <!-- login/panier -->
+
+    <a href="#"><p>LOGIN / PANIER</p></a>
+
+  </div>
+
+    <!----------------------- BANDEAU CLAIR ---------------------------->
+
+  <nav class="navbar">
+
+    <!-- logo -->
+
+    <div>
+      <a href="index.html" class="logo">La<br>Tête<br>en<br>Vrac</a> 
+    </div>
+
+    <!-- navigation top-page -->
+
+    <div class="nav-links mobile-menu" >                    
+      <ul>
+        <li><a href="index.html" class="active">Accueil</a></li>
+        <li><a href="#">Denrées Alimentaires</a></li>
+        <li><a href="#">Hygiène Corporelle</a></li>
+        <li><a href="#">Boissons</a></li>
+        <li><a href="#">Produits Ménagers</a></li>
+      </ul>
+    </div>
+
+    <!-- burger -->
+
+    <div class="burger">                                     
+      <a href="#"><i class="fa-solid fa-bars" alt="menu hamburger" ></i></a>
+    </div>
+
+  </nav>
+
+</header>
 
 <main class="container">
 
@@ -146,7 +166,7 @@
             <li><a href="#">Politique de confidentialité</a></li>
             <li><a href="contact.html">Contactez-nous</a></li>
             <li><a href="#">Condition d'utilisation</a></li>
-            <li><a href="#">Mentions légales</a></li>
+            <li><a href="legal.html">Mentions légales</a></li>
         </ul>
     </div>
 
