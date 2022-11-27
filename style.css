@@ -159,19 +159,26 @@ header{
 }
 
 .nivoSlider img {
-	position:relative;
-	top:0px;
-  bottom:1200px;
-	left:0px;
+ opacity: 0.9;
 }
 
 .nivo-caption {
 	position:absolute;
 	left:55px;
-	bottom:20px;
+	bottom:15px;
 	background:rgba(0, 0, 0, 0);
-	color:#354E57;
+	color:#ffffff;
   font-size: 0.9rem;
+  text-shadow: 1px 1px 2px #141d20;
+}
+
+.nivo-caption p{
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.nivo-caption a:hover{
+  border-bottom: 3px solid white ;
 }
 
 .theme-default:hover .nivo-directionNav a {
@@ -423,13 +430,17 @@ header{
     display: none;
   }
 
-  .slider-wrapper{
-    display: none;
-  }
+ 
 
 }
 
-@media screen and (max-width: 713px){
+@media screen and (max-width: 750px){
+  .slider-wrapper{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 760px){
 
   .burger{
     display: block;
@@ -465,7 +476,7 @@ header{
 }
 
 @media screen and (max-width: 550px){
-  
+
   #ShopHome{
     padding: 0;
   }

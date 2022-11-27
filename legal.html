@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-------------------------------------- SLIDER ------------------------------------>
+                            
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+<!----------------------------------- AWESOMEFONTS ------------------------------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>La Tête en Vrac, votre épicier BIO</title>
+
+</head>
+
+<body>
+
+<!--------------------------------------- HEADER ------------------------------------->
+
+    <header id="bandeau" class="container">
+        
+    <nav>
+        <div id="bandeaufonce">
+            <p>LUNDI : 13h - 18h30 / MARDI AU VENDREDI : 09h - 18h30 / SAMEDI : 09h - 17h</p>
+            <div><input type="text" name="produits" placeholder="&nbsp;&nbsp;&nbsp;marque, produit..."></div>
+            <span><a href="#">LOGIN / PANIER</a></span>
+        </div>
+
+       
+
+        <div id="bandeauclair">
+
+            <a href="index.html"><h1>La<br>Tête<br>En<br>Vrac</h1></a>
+            
+            <div id="burger">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+
+            <ul>
+                <li><a href="#" class="choix">Denrées Alimentaires</a></li>
+                <li><a href="#">Hygiène Corporelle</a></li> 
+                <li><a href="#">Boissons</a></li>
+                <li><a href="#">Produits Ménagers</a></li>
+                <li><a href="#">Plus</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    </header>
+
+<main id="legalstuff" class="container">
+
+<figure id="legalimg">
+    <img src="images/pexels-ekaterina-bolovtsova-6077961.jpg" alt="Mentions légales">
+</figure>  
+
+<article id="legaltext">
+    
+        <h4>Mentions légales</h4>
+
+        <p>
+            Responsable de la publication :
+        </p>
+        <address>
+            La Tête en Vrac,<br>
+            Rue des Chavannes 19,<br>
+            2000 Neuchâtel<br>
+        </address>
+        <p .class="tel">
+            Tél. : 032 544 78 29<br>
+            Tél. : 079 157 14 62<br><br>
+
+            Chez La Tête en Vrac – SARL au capital de 20 000 CHF – TVA N°CHE-245.962.095
+        </p>
+    
+</article>
+   
+
+</main>
+
+<!---------------------------FOOTER------------------------------------>
+
+<footer id="footer" class="container">
+
+    <div class="coordonnees">
+        <div>
+            <h3>LA TÊTE EN VRAC</h3>
+            <p>Épicerie</p>
+        </div>
+
+        <div class="addresse">
+
+            <address>
+                Rue des Chavannes 19,<br>
+                2000 Neuchâtel<br>
+                <br>
+                Lundi : 13 h - 18 h 30<br>
+                Mardi au Vendredi : 09 h - 18 h 30<br>
+                Samedi : 09 h - 17 h<br>
+                <br>
+                <img src="images/phone-call.png" alt="icone de telephone" class="telephone">+41 32 544 78 29
+            </address>
+            
+        </div>
+
+    </div>
+
+    <div class="googlemap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d360.4047991447616!2d6.928677820012458!3d46.992830924794646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e0bfbab80aabf%3A0xe7c3469d47b44653!2sLa%20T%C3%AAte%20en%20vrac!5e0!3m2!1sfr!2sfr!4v1669139597972!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <div id="mentionslegales">
+        <ul>
+            <li><a href="#">Politique de remboursement</a></li>
+            <li><a href="#">Politique de confidentialité</a></li>
+            <li><a href="contact.html">Contactez-nous</a></li>
+            <li><a href="#">Condition d'utilisation</a></li>
+            <li><a href="#">Mentions légales</a></li>
+        </ul>
+    </div>
+
+</footer>
+
+
+    <!-- SLIDER -->
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+
+    // MENUQUIDEFILE
+    $('#menuprincipal #burger').click(function(){
+        $('#menuprincipal ul').slideToggle(1500);
+    });
+    </script>  
+</body>
+</html>
