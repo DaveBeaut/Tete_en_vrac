@@ -204,16 +204,16 @@ header{
 
 #senourrir{
   display: flex;
-  max-width: 1200px;
   align-items: center;
 }
 
 #senourrir article{
   margin-left: 16px;
-  margin: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   background-color: #EFF1F0;
   border-radius: 10px;
-  padding: 55px;
+  padding: 30px 24px;
 }
 
 #senourrir h1{
@@ -251,7 +251,7 @@ header{
   border-radius: 10px;
   position: relative;
   right: 3px;
-  top:26px;
+  top:16px;
   width: 30%;
   text-align: center;
   justify-self: flex-end;
@@ -367,6 +367,7 @@ header{
 #mentionslegales{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   margin-top: 12px;
 }
 
@@ -535,6 +536,12 @@ header{
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 830px){
+  #footer{
+    flex-direction: ;
   }
 }
 
