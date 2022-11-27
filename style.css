@@ -30,6 +30,8 @@
   font-style: normal;
    }
 
+/********************* RESET  ****************************/
+
 * {
   padding: 0;
   margin: 0;
@@ -482,6 +484,7 @@ header{
 
 /********** PAGE DE SHOP *********/
 
+/* message inspirant + photo */
 #hautdepageshop{
   margin-top: 16px;
   display: flex;
@@ -513,6 +516,7 @@ header{
   height: 300px;
 }
 
+/* selecteur de tri */
 #trierpar{
   margin-top: 60px;
   margin-bottom: 16px;
@@ -520,21 +524,76 @@ header{
   display: flex;
   justify-content: flex-end;
   position: relative;
-  left: 500px;
+  left: 380px;
+  top: 100px;
+}
+            /* PRODUITS  */
+
+#listeproduits{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  position: relative;
+  bottom: 200px;
+  width: 1000px;
 }
 
+.produit{
+  margin: 16px;
+  color: #354E57;
+}
 
+.produit img:hover{
+  opacity: 0.7;
+}
 
 .trait{
   width: 1000px;
   height: 1px;
-  background-color: #1f2a2e   ;
   position: relative;
-  left: 200px;
+  z-index: 20000;
+}
+.produit button{
+  background-color: #C4B5A8;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: none;
+  text-shadow: none;
+  color: white;
+  font-family: 'rubikregular';
+  font-size: 1rem;
+  width: 100%;
+  border: none;
+ }
+
+ .produit button:hover{
+  background-color: rgba(79, 100, 41, 0.705);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 
+#choixbouffe a{
+  text-transform: none;
+  color: black;
+}
+
+#choixbouffe h5{
+  font-size: 1.2rem;
+}
+
+#choixbouffe h5.active{
+  border-bottom: 2px black solid;
+}
+
+#choixbouffe a:hover{
+  font-weight: bolder;
+}
 
 /******** MEDIA QUERRIES **********/
+
 @media screen and (max-width:1200px){
 
   #footer .coordonnees{
@@ -691,15 +750,7 @@ header{
 
 }
 
-
-
-
-
-/*******************************************/
-
-
-
-
+/******************* MENU BURGER ************************/
 
 /* menu smartphone */
 
