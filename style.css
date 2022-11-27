@@ -499,8 +499,6 @@ header{
   padding: 90px 50px 50px;
   color: #354E57;
   max-height: 160px;
-  
-  
 }
 
 #texthautshop h4{
@@ -553,6 +551,7 @@ header{
   position: relative;
   z-index: 20000;
 }
+
 .produit button{
   background-color: #C4B5A8;
   padding: 5px;
@@ -569,15 +568,12 @@ header{
  .produit button:hover{
   background-color: rgba(79, 100, 41, 0.705);
   transition: 0.4s;
-  -webkit-transition: 0.4s;
-  -moz-transition: 0.4s;
-  -ms-transition: 0.4s;
-  -o-transition: 0.4s;
 }
 
 #choixbouffe a{
   text-transform: none;
   color: black;
+  margin-left: 40px;
 }
 
 #choixbouffe h5{
@@ -609,7 +605,6 @@ header{
     margin-left: 16px;
     margin-right: 16px;
     }
-
 
   .nivoSlider{
     margin-left: 16px;
@@ -769,7 +764,6 @@ header{
   margin: 9px 0;
   border-radius: 5px;
   transition: 0.4s;
-
 }
 
 .nav-smartphone {
@@ -814,7 +808,6 @@ header{
   color: white;
 }
 
-
 .nav-smartphone a:hover,
 .nav-smartphone a:focus {
   color: rgba(208, 255, 0, 0.664);
@@ -854,7 +847,7 @@ header{
     font-size: 0.5rem;
     color: #354E57;
   }
-
+  
   .menu-ul {
      display: none;
   }
