@@ -52,6 +52,8 @@ body{
   background-color: rgb(252, 249, 249);
 }
 
+
+
 /********************* BANDEAU FONCE **************************/
 
 #bandeaufonce{
@@ -114,6 +116,10 @@ header{
   font-size: 1.7rem;
   line-height: 16px;
   margin-right: 24px;
+}
+
+.navbar .logo:hover{
+  color:rgba(245, 229, 8, 0.884) ;
 }
 
 .navbar .nav-links a{
@@ -221,7 +227,7 @@ header{
   font-family: 'rubikregular';
   font-size: 1rem;
   font-weight: lighter;
-  max-width: 100%;
+  width: 100%;
   color: #354E57;
 }
 
@@ -235,8 +241,8 @@ header{
 #textesetbouton{
   display: flex;
   flex-wrap: wrap;
-  
 }
+
 .boutonpresentation{
   background-color: #D7C4B4;
   padding: 10px 15px;
@@ -246,6 +252,9 @@ header{
   position: relative;
   right: 3px;
   top:26px;
+  width: 30%;
+  text-align: center;
+  justify-self: flex-end;
 }
 
 .boutonpresentation:hover{
@@ -433,7 +442,7 @@ header{
   border-radius: 10px;
   background-color: #f2f2f2;
   padding: 40px 60px;
-  
+  margin-bottom: 16px;
 }
 
 #formulairecontact input[type=text], select, textarea {
@@ -516,6 +525,17 @@ header{
     margin-top: 16px;
   }
 
+  #formulairecontact{
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
+  
+  #legalstuff{
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+  }
 }
 
 @media screen and (max-width: 830px){
