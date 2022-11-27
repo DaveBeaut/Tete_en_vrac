@@ -1,0 +1,564 @@
+@font-face {
+  font-family: 'rubikmedium';
+   src: url('fonts/rubik-medium-webfont.woff2') format('woff2'),
+       url('fonts/rubik-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'rubikbold';
+  src: url('fonts/rubik-bold-webfont.woff2') format('woff2'),
+       url('fonts/rubik-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rubikregular';
+  src: url('fonts/rubik-regular-webfont.woff2') format('woff2'),
+       url('fonts/rubik-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rubiklight';
+  src: url('rubik-light-webfont.woff2') format('woff2'),
+       url('rubik-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+   }
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+body{
+  background-color: rgb(252, 249, 249);
+}
+
+/********************* BANDEAU FONCE **************************/
+
+#bandeaufonce{
+  background-color: #C4B5A8;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#bandeaufonce .search-bar{
+  margin: 0.5%;
+  padding: 0 20px;
+}
+
+#bandeaufonce input{
+  padding: 8px;
+  width:35vw;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  text-shadow: none; 
+}
+
+.fa-solid .fa-bars{
+  position: absolute;
+  right: 0; 
+}
+
+#bandeaufonce p{
+  font-family: 'rubikbold';
+  color: #354E57;
+  font-size: 14px;
+}
+
+/********************* BANDEAU CLAIR *************************/
+
+header{
+  width: 100vw;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  background-color: #D7C4B4;
+  border-radius: 0 0 10px 10px;
+}
+
+.navbar a{
+  color: white;
+}
+
+.navbar .logo{
+  width: 2rem;
+  font-weight: bolder;
+  font-family: 'rubikmedium';
+  font-size: 1.7rem;
+  line-height: 16px;
+  margin-right: 24px;
+}
+
+.navbar .nav-links a{
+  text-decoration: none;
+}
+
+.navbar .nav-links ul{
+  display: flex;
+}
+
+.navbar .nav-links ul li{
+  margin: 0 20px;
+}
+
+.navbar .nav-links ul li a{
+  font-family: 'rubikregular';
+  font-size: 1.2rem;
+}
+
+.navbar .nav-links ul li a:hover{
+  border-bottom: 3px solid rgba(245, 229, 8, 0.884);
+}
+
+.navbar .nav-links ul li a.active{
+  border-bottom: 3px solid rgba(245, 229, 8, 0.884);
+  font-weight: 600;
+}
+
+.burger{
+  font-size: 4rem;
+  display: none;
+  color: white;
+}
+
+/***************** SLIDER *********************************/
+
+.nivoSlider {
+  width:inherit;
+  height: 80px;
+  overflow: hidden;
+  margin-top: 16px;
+  border-radius: 10px ;
+}
+
+.nivoSlider img {
+	position:relative;
+	top:0px;
+  bottom:1200px;
+	left:0px;
+}
+
+.nivo-caption {
+	position:absolute;
+	left:55px;
+	bottom:20px;
+	background:rgba(0, 0, 0, 0);
+	color:#354E57;
+  font-size: 0.9rem;
+}
+
+.theme-default:hover .nivo-directionNav a {
+	display: none;
+}
+
+.theme-default .nivo-controlNav {
+	display: none;
+}
+
+.theme-default .nivoSlider{
+  box-shadow: none;
+}
+
+/***************** PRESENTATION PROJET ********************/
+
+
+#senourrir{
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+}
+
+#senourrir article{
+  margin-left: 16px;
+  margin: 16px;
+  background-color: #EFF1F0;
+  border-radius: 10px;
+  padding: 55px;
+}
+
+#senourrir h1{
+  font-family: 'rubikbold';
+  font-size: 1.4rem;
+  color: #354E57;
+  padding-bottom: 22px ;
+}
+
+#senourrir p{
+  font-family: 'rubikregular';
+  font-size: 1rem;
+  font-weight: lighter;
+  max-width: 100%;
+  color: #354E57;
+}
+
+#photopresentation img{
+  margin: 16px 0;
+  margin-left: 16px;
+  border-radius:10px;
+  opacity: 0.7;
+}
+
+#textesetbouton{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.boutonpresentation{
+  background-color: #D7C4B4;
+  padding: 10px 15px;
+  font-family: 'rubikmedium';
+  color: white;
+  border-radius: 10px;
+  position: relative;
+  right: 3px;
+  top:26px;
+}
+
+.boutonpresentation:hover{
+  background-color: rgba(245, 229, 8, 0.884);
+  transition: 0.4s;
+}
+
+/********************** BOUTONS RONDS  ********************/
+#ShopHome{
+  background-color: #EFF1F0;
+  margin-top: 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px 100px;
+ 
+}
+
+.boutonshop a{
+  width: 70px;
+  height: 70px;
+  background-color: rgb(252, 248, 248);
+  border: 2px solid #d7c4b4b2;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 20px 30px;
+  display: flex;
+}
+
+.boutonshop a:hover{
+  background-color: rgba(208, 255, 0, 0.411);
+  transition: 0.4s;
+}
+
+#ShopHome figcaption {
+  position: relative;
+  bottom: 18px;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'rubikregular';
+  /* font-family: 'rubiklight'; ne fonctionne pas ? */
+  font-weight: lighter;
+  line-height: 1.5;
+  color:#354e57d7;
+}
+
+/*************************** FOOTER ****************************/
+
+#footer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+/************************* coordonnées ************************/
+
+#footer .coordonnees{
+  width: 49%;
+  background-color: #EFF1F0;
+  border-radius: 10px;
+  color: #354E57;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-justify: content;
+  flex-direction: column;
+  padding: 16px 0px;
+}
+
+#footer{
+  margin: 0 auto;
+}
+             
+#footer .coordonnees h3{
+  font-family: 'rubikbold';
+  font-size: 20px;
+}
+
+#footer .coordonnees p{
+  font-family: 'rubikregular';
+  text-align: center;
+}
+
+#footer .coordonnees address{
+  font-family: 'rubikregular'; 
+  font-style: normal;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#footer .telephone{
+  position: relative;
+  top: 6px;
+  right: 8px;
+}
+
+                  /*googlemap*/
+
+#footer .googlemap iframe{
+  border-radius: 10px;
+  width: 592px;
+  height: 288px;
+}
+
+            /* MENTIONS LEGALES */
+
+#mentionslegales{
+  width: 100%;
+  display: flex;
+  margin-top: 12px;
+}
+
+#mentionslegales ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #D7C4B4;
+  border-radius: 10px 10px 0 0;
+  font-family: 'rubikmedium';
+  padding: 40px 0;
+}
+
+#mentionslegales li a{
+  display: flex;
+  justify-content: sp;
+  color: white;
+  text-transform: none;
+}
+
+#mentionslegales li a:hover{
+  border-bottom: 3px rgba(245, 229, 8, 0.884) solid ;
+}
+
+@media screen and (max-width:1183px){
+
+  #footer .coordonnees{
+      width: 100%;
+  }
+
+  .nivoSlider{
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  
+  .googlemap{
+      display: none;
+  }
+  
+  #bandeaufonce{
+    margin: 0 16px;
+  }
+  .navbar{
+    margin: 0 16px;
+  }
+
+  #ShopHome{
+    margin: 0px 16px;
+    margin-top: 16px;
+  }
+
+  .coordonnees{
+    margin: 0 16px;
+  }
+
+  .googlemap{
+    margin: 0 16px;
+  }
+
+  #mentionslegales{
+    margin: 0 16px;
+    margin-top: 16px;
+  }
+
+}
+
+@media screen and (max-width: 830px){
+  
+  #photopresentation{
+    display: none;
+  }
+
+  .slider-wrapper{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 713px){
+
+  .burger{
+    display: block;
+    z-index: 20000;
+  }
+
+  .nav-links ul li a{
+    display: none;
+    color: #354E57;
+  }
+
+  .nav-links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar{
+    justify-content: space-evenly;
+  }
+  #bandeaufonce{
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  #bandeaufonce p{
+    margin: 0 20px;
+  }
+  #bandeaufonce input{
+    width:50vw;
+  }
+
+}
+
+@media screen and (max-width: 550px){
+  
+  #ShopHome{
+    padding: 0;
+  }
+
+}
+
+@media screen and (max-width: 550px){
+
+  #bandeaufonce p{
+    margin: 0;
+    margin-right: 16px;
+    padding: 4px 0;
+  }
+
+}
+
+@media screen and (max-width: 434px){
+
+  #bandeaufonce p{
+    margin: 0;
+    margin-right: 10px;
+  }
+
+}
+
+
+@media screen and (max-width: 400px){
+
+  #bandeaufonce p {
+    margin: 0 5px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+@media screen and (max-width: 625px){
+  
+  .burger{
+    display: block;
+    z-index: 20000;
+  }
+
+  .nav-links{
+    top: 0;
+    position: absolute;
+    background-color: rgba(222, 184, 135, 0.687);
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+  }
+
+  .nav-links{
+    position: absolute;
+    background-color: rgba(222, 184, 135, 0.687);
+    height: 100vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -100%;
+  }
+
+  .nav-links.mobile-menu{
+    margin-left: 0;
+  }
+
+  .nav-links ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links ul li{
+    padding: 15px 0px;
+    font-size: 1.25rem;
+  }
+
+  .navbar{
+    justify-content: space-around;
+  }
+} */
